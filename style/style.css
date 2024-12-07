@@ -364,3 +364,17 @@ body {
     display: none;
   }
 }
+
+#main-container {
+  width: 100%;
+  min-height: 100svh;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.nav-link-active {
+  font-weight: 600 !important;
+  color: #0a58ca !important;
+}
