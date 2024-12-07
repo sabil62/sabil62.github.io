@@ -1,20 +1,33 @@
-console.log("script file added");
-
-// const mainCotainer = document.getElementById("main-container");
-// mainCotainer.innerHTML.src = "./components/home.html";
-
-// document.getElementById("new").innerHTML = "Hello JS ";
-
-function handleNavigation(fileName, button) {
+function handleNavigation(pageName, activeButton) {
   const navigationButtons = document.getElementsByClassName("nav-link");
+
+  console.log(navigationButtons);
+
+  Array.from(navigationButtons).forEach((element) => {
+    element.classList.remove("nav-link-active");
+  });
+  console.log(activeButton);
+
+  activeButton.classList.add("nav-link-active");
+
+  const mainContainer = document.getElementById("main-container");
+  mainContainer.src = `./components/${pageName}`;
+}
+
+function goToPage(pageName, activeButtonId) {
+  const navigationButtons = document.getElementsByClassName("nav-link");
+
   console.log(navigationButtons);
 
   Array.from(navigationButtons).forEach((element) => {
     element.classList.remove("nav-link-active");
   });
 
-  const mainCotainer = document.getElementById("main-container");
-  mainCotainer.src = `./components/${fileName}`;
+  const activeButton = document.getElementById(activeButtonId);
+  console.log(activeButton);
 
-  button.classList.add("nav-link-active");
+  activeButton.classList.add("nav-link-active");
+
+  const mainContainer = document.getElementById("main-container");
+  mainContainer.src = `./components/${pageName}`;
 }
