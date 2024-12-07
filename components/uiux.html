@@ -22,10 +22,90 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- OwlCarousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
     <title>Portfolio</title>
   </head>
   <body>
-    <h1>UI UX</h1>
+    <!-- -------------------------------------VIDEO------------------------------------ -->
+    <section class="video" id="videos">
+      <div class="headings">My Videos</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <iframe
+              width="360"
+              height="205"
+              src="https://www.youtube.com/embed/uZWpMQiATNg"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="video-inside"
+            ></iframe>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <iframe
+              width="360"
+              height="205"
+              src="https://www.youtube.com/embed/lKgQ3auIlr8"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="video-inside"
+            ></iframe>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <iframe
+              width="360"
+              height="205"
+              src="https://www.youtube.com/embed/aDNnohhv2G4"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="video-inside"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------Mobile apps ()------------------------------------ -->
+    <section class="mobile-app" id="apps">
+      <div class="headings">Mobile Apps Design</div>
+      <div class="container">
+        <div
+          class="owl-carousel owl-theme second-owl-carousel"
+          id="two-carousel"
+        >
+          <div class="item">
+            <img src="../assets/mobile/covid.jpg" class="img-caro-2" />
+          </div>
+          <div class="item">
+            <img src="../assets/mobile/food.jpg" class="img-caro-2" />
+          </div>
+          <div class="item">
+            <img src="../assets/mobile/book.jpg" class="img-caro-2" />
+          </div>
+          <div class="item">
+            <img src="../assets/mobile/card.jpg" class="img-caro-2" />
+          </div>
+          <div class="item">
+            <img src="../assets/mobile/dubai.jpg" class="img-caro-2" />
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -33,5 +113,63 @@
       crossorigin="anonymous"
     ></script>
     <script src="../script.js" type="application/javascript"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- owl carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#one-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 6400,
+        autoplayHoverPause: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+      $("#two-carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5500,
+        margin: 85,
+        autoplayHoverPause: true,
+
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

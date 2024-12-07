@@ -378,3 +378,295 @@ body {
   font-weight: 600 !important;
   color: #0a58ca !important;
 }
+
+/* new  */
+.sabil {
+  position: relative;
+  height: 8rem;
+}
+
+.sabil-inside {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 80%;
+}
+
+.sabil-text {
+  display: block;
+  font-size: 3.3rem;
+  font-family: cleaner;
+  color: #2f2e2e;
+  white-space: nowrap;
+  -webkit-animation: moveInRight 2s ease-in-out;
+  animation: moveInRight 2s ease-in-out;
+}
+
+.navigation-bar {
+  font-family: cleaner;
+  font-size: 0.9rem;
+  color: #2f2e2e;
+}
+
+.light-bgs {
+  background-color: #fcfafa;
+}
+
+.navbar-contents {
+  margin-left: 32%;
+  -webkit-animation: moveFromLeft 1.6s ease-in;
+  animation: moveFromLeft 1.6s ease-in;
+}
+
+.icon-links {
+  position: relative;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.icon-links .icons {
+  font-size: 1.29rem;
+  position: absolute;
+  right: 16%;
+  color: #0f0f0f;
+}
+
+.icon-links .icons .mxx {
+  margin: 0 0.8rem;
+}
+
+.icon-links .fab,
+.icon-links .fas {
+  color: #0f0f0f;
+}
+
+.icon-links .fab:hover,
+.icon-links .fas:hover {
+  color: rgba(15, 15, 15, 0.68);
+}
+
+.stick-top-css {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.box-shadow-navbar {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.137),
+    0 6px 20px 0 rgba(0, 0, 0, 0.041);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.137),
+    0 6px 20px 0 rgba(0, 0, 0, 0.041);
+}
+
+.personal-photo .photo {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(11, 11, 11, 0.4)),
+      to(rgba(11, 11, 11, 0.7))
+    ),
+    url("../assets/image/perso.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(11, 11, 11, 0.4),
+      rgba(11, 11, 11, 0.7)
+    ),
+    url("../assets/image/perso.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 70vh;
+}
+
+.personal-photo .photo .description-card {
+  margin-top: 15%;
+  background-color: #f7f9fa;
+  padding: 1.75rem;
+  width: 80%;
+  text-align: center;
+  -webkit-box-shadow: 2px 10px 6px -6px #4d4c4c, -2px 0px 6px -6px #4d4c4c;
+  box-shadow: 2px 10px 6px -6px #4d4c4c, -2px 0px 6px -6px #4d4c4c;
+}
+
+.personal-photo .photo .description-card .top {
+  font-size: 1.1rem;
+  font-family: cleaner;
+  color: #c0af9b;
+  margin: 2.5rem 0.5rem 1.5rem 0.5rem;
+  letter-spacing: 4.2px;
+}
+
+.personal-photo .photo .description-card .mid-1 {
+  font-family: niconne;
+  font-size: 1.35rem;
+  letter-spacing: 5.1px;
+  padding: 0.25rem 0;
+}
+
+.personal-photo .photo .description-card .bottom {
+  font-family: cleaner;
+  font-size: 0.55rem;
+  letter-spacing: 2.1px;
+  margin: 1.8rem 0 4rem 0;
+}
+
+@font-face {
+  src: url(../assets/fonts/Lulo-Clean-W1-one-bold.ttf);
+  font-family: cleaner;
+}
+
+@font-face {
+  src: url(../assets/fonts/Niconne-Regular.ttf);
+  font-family: niconne;
+}
+
+.skills {
+  margin: 4rem 0;
+  padding: 6rem 0;
+  background-color: #f7f9fa;
+}
+
+.skills .skill-heading {
+  text-align: center;
+  font-size: 2.1rem;
+  padding-bottom: 2.6rem;
+  font-family: cleaner;
+}
+
+.skills .li-skill {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: grey;
+  font-weight: 500;
+  padding: 0.15rem 1rem;
+}
+
+.skills .li-skill:hover {
+  color: rgba(128, 128, 219, 0.938);
+}
+
+.skills .card-css {
+  height: 19rem;
+  width: 19rem;
+  border-radius: 1.6rem;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.527);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.527);
+}
+
+.skills .card-css .card-image {
+  height: 12.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.skills .card-css .card-body-css {
+  height: 5.5rem;
+  background-color: #f8f8f9;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 0 0 1.6rem 1.6rem;
+}
+
+@font-face {
+  src: url(../assets/fonts/Lulo-Clean-W1-one-bold.ttf);
+  font-family: cleaner;
+}
+
+@font-face {
+  src: url(../assets/fonts/Niconne-Regular.ttf);
+  font-family: niconne;
+}
+
+.about {
+  margin: 10rem 0;
+}
+
+.about-heading {
+  font-family: cleaner;
+  font-size: 1.6rem;
+  padding: 1rem 0 1.2rem 0;
+}
+
+.about-small {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.about .photo {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 9rem;
+  margin-left: 25%;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.199)),
+      to(rgba(0, 0, 0, 0.445))
+    ),
+    url("../assets/image/sabil.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.445)),
+    url("../assets/image/sabil.jpg");
+  background-size: contain;
+}
+
+@font-face {
+  src: url(../assets/fonts/Lulo-Clean-W1-one-bold.ttf);
+  font-family: cleaner;
+}
+
+@font-face {
+  src: url(../assets/fonts/Niconne-Regular.ttf);
+  font-family: niconne;
+}
+
+.headings {
+  text-align: center;
+  font-size: 2.1rem;
+  padding-bottom: 2.6rem;
+  font-family: cleaner;
+}
+
+.img-caro {
+  -webkit-box-shadow: 1px 1px 8px 3px rgba(11, 11, 11, 0.325),
+    -1px -1px 8px -4px rgba(11, 11, 11, 0.3);
+  box-shadow: 1px 1px 8px 3px rgba(11, 11, 11, 0.325),
+    -1px -1px 8px -4px rgba(11, 11, 11, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+.img-caro-2 {
+  border-radius: 1rem;
+  -webkit-box-shadow: 1px 1px 10px 3px rgba(11, 11, 11, 0.225),
+    -1px -1px 10px -4px rgba(11, 11, 11, 0.2);
+  box-shadow: 1px 1px 10px 3px rgba(11, 11, 11, 0.225),
+    -1px -1px 10px -4px rgba(11, 11, 11, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+.video {
+  margin: 7rem 0;
+}
+
+.video-inside {
+  padding: 1rem;
+}
+
+.mobile-app {
+  background-color: #f7f9fa;
+  padding: 6rem 0;
+}
+
+.footer {
+  background-color: rgba(100, 100, 120, 0.8);
+}
+
+.footer-padding {
+  padding: 3rem 0;
+}
+/*# sourceMappingURL=styles.css.map */
