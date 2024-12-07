@@ -31,3 +31,7 @@ function goToPage(pageName, activeButtonId) {
   const mainContainer = document.getElementById("main-container");
   mainContainer.src = `./components/${pageName}`;
 }
+
+function goToUrl(url) {
+  window.open(url);
+}

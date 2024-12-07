@@ -426,14 +426,14 @@ body {
 }
 
 .icon-links .icons {
-  font-size: 1.29rem;
+  font-size: 2rem;
   position: absolute;
-  right: 16%;
+  left: 0%;
   color: #0f0f0f;
 }
 
 .icon-links .icons .mxx {
-  margin: 0 0.8rem;
+  margin-right: 1.6rem;
 }
 
 .icon-links .fab,
@@ -669,4 +669,7 @@ body {
 .footer-padding {
   padding: 3rem 0;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.item {
+  cursor: pointer;
+}
